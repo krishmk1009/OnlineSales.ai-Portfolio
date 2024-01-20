@@ -1,6 +1,6 @@
 import React from "react";
 
-const Feature1: React.FC = () => {
+const Feature3: React.FC = () => {
   return (
     <div>
       <div className=" flex py-10">
@@ -23,7 +23,7 @@ const Feature1: React.FC = () => {
         </div>
         <div className="w-1/2 flex justify-end">
           <img
-            src="https://assets-global.website-files.com/61a0c5dbad4af846792cc63c/64f07b6414828ebfdab583df_1.png"
+            src="https://assets-global.website-files.com/61a0c5dbad4af846792cc63c/64f07b64d2578cea842e0a19_2.png"
             className="h-[470px] w-[620px] "
           />
         </div>
@@ -32,4 +32,4 @@ const Feature1: React.FC = () => {
   );
 };
 
-export default Feature1;
+export default Feature3;

@@ -22,14 +22,14 @@ const Feature2: React.FC = () => {
             while admin controls keep you firmly in the driver’s seat.
           </p>
           <div className="flex py-2">
-            <button className="h-10 font-semibold text-white bg-white px-4 bg-[#1F75FE] rounded-xl ">
+            <button className="h-10 font-semibold text-white  px-4 bg-[#1F75FE] rounded-xl ">
               Learn More
             </button>
           </div>
         </div>
       </div>
 
-      <div className="flex ">
+      <div className="flex pb-10">
         <div className="w-1/4 mx-7 ">
           <h3 className="text-[25px] text-[#1F75FE] my-3 leading-tight">
             White-labeled & Self-Serve

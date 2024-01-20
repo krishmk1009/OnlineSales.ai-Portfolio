@@ -7,19 +7,19 @@ const Nav: React.FC = () => {
         <div>
           <img
             src="https://assets-global.website-files.com/61a0c5dbad4af846792cc63c/647731d37f21e99693cc40b6_onlinesales-monetization-platform-os-logo.png"
-            className="w-44"
+            className="md:w-44 w-40"
           />
         </div>
 
-        <div className="flex">
-          <ul className="flex py-2">
-            <li className="px-4 mx-4">home</li>
-            <li className="px-4 mx-4">home</li>
-            <li className="px-4 mx-4">home</li>
-            <li className="px-4 mx-4">home</li>
+        <div className="flex ">
+          <ul className="md:flex hidden ">
+            <li className="px-4 mx-4 pt-1">home</li>
+            <li className="px-4 mx-4 pt-1">home</li>
+            <li className="px-4 mx-4 pt-1">home</li>
+            <li className="px-4 mx-4 pt-1">home</li>
+            <button className="h-10 text-black bg-white px-4 rounded">Schedule A Demo</button>
           </ul>
        
-            <button className="h-10 text-black bg-white px-4 rounded">Schedule A Demo</button>
        
           <div></div>
         </div>
