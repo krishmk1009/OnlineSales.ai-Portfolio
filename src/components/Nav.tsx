@@ -17,7 +17,10 @@ const Nav: React.FC = () => {
             <li className="px-4 mx-4 pt-1">Products</li>
             <li className="px-4 mx-4 pt-1">Resources</li>
             <li className="px-4 mx-4 pt-1">Hyperlocal</li>
+            <a href="https://github.com/krishmk1009" target="blank">
+
             <button className="h-10 text-black bg-white px-4 rounded">Visit Github</button>
+            </a>
           </ul>
        
        

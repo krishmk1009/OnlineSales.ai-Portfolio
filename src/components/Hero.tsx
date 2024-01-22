@@ -26,11 +26,14 @@ const Hero: React.FC = () => {
           <div className="flex md:py-2 pb-3 md:pb-0 px-4 md:px-0 ">
             <input
               className="h-10 text-black bg-white px-4 mr-3 rounded w-4/6 md:w-3/6 font-roboto"
-              placeholder="Enter your email address"
+              placeholder="Click button to download CV"
             />
+            <a href="https://drive.google.com/file/d/1GbfgzxUzoQ-GbxLZTAZxlU3zN9SjiafR/view?usp=sharing" target="blank">
+
             <button className="h-10 text-white  px-2 md:px-4 rounded bg-gradient-to-r from-[#ffa349] to-[#f64e90] hover:bg-white font-muli ">
              Download CV
             </button>
+            </a>
           </div>
         </div>
         <div className="md:w-1/2 flex md:justify-end justify-center py-4 md:py-0">

@@ -66,7 +66,9 @@ const Resources: React.FC = () => {
           ))}
         </div>
         <div className="flex justify-center my-10">
+          <a href="https://www.linkedin.com/in/krushnamodhave/" target="blank" >
           <button className={styles.seeAllButton}>Linkedin Profile</button>
+          </a>
         </div>
       </div>
     </div>

@@ -21,9 +21,13 @@ const Feature1: React.FC = () => {
 
           </p>
           <div className="md:flex py-2 font-muli">
+            <a href="https://github.com/krishmk1009" target="blank">
+
+            
             <button className="h-10 font-semibold text-white  px-4 bg-[#1F75FE] rounded-xl ">
-              Talk to an Expert
+              Visit to Github
             </button>
+            </a>
           </div>
         </div>
         <div className="md:w-1/2 flex md:justify-end justify-center my-4 md:my-0 mr-8 md:mr-0">

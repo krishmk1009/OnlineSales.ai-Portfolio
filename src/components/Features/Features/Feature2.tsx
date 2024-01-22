@@ -23,9 +23,13 @@ const Feature2: React.FC = () => {
             develop a versatile AI chatbot using Node.js, MongoDB, WebApi's
           </p>
           <div className="md:flex md:py-2">
+          <a href="https://whatsgpt.tech/" target="blank">
+
             <button className="font-muli h-10 font-semibold text-white  px-4 bg-[#1F75FE] rounded-xl ">
               Learn More
             </button>
+
+            </a>
           </div>
         </div>
       </div>
