@@ -1,30 +1,32 @@
 import React from "react";
+import Feat3 from "../../../assets/feat3.png"
 
-const Feature3: React.FC = () => {
+const Feature1: React.FC = () => {
   return (
     <div>
-      <div className=" flex py-10">
+      <div className=" md:flex md:py-10 pt-10">
         {/* Your hero content goes here */}
-        <div className="w-1/2 ">
-          <h3 className="text-[40px] leading-tight pt-20 w-4/5">
-            Invest better with domain experts and{" "}
-            <span className="text-[#1F75FE]">go live in weeks!</span>
+        <div className="md:w-1/2 px-4 md:px-0 text-center md:text-left">
+          <h3 className="md:text-[40px] text-[22px]  leading-tight md:pt-20 md:w-[90%] font-muli">
+Financial Data Visulization Platform:            <span className="text-[#1F75FE]">Trading Compass </span>
           </h3>
-          <p className="py-6 pr-10">
-          Your platform, built by us, to your specifications - and at a fraction of the time and cost it takes to build in-house.
+          <p className="md:py-6 py-3 md:pr-10 font-roboto">
+          Contributed as a front-end developer to create a user-friendly financial data visualization platform.Utilized a range of graphical tools to enable users to analyze movements in the derivative market
+
+
+
 
           </p>
-          <div className="flex py-2">
-            
+          <div className="md:flex py-2 font-muli">
             <button className="h-10 font-semibold text-white  px-4 bg-[#1F75FE] rounded-xl ">
-             Talk to an Expert
+              Talk to an Expert
             </button>
           </div>
         </div>
-        <div className="w-1/2 flex justify-end">
+        <div className="md:w-1/2 flex md:justify-end justify-center my-4 md:my-0 mr-8 md:mr-0">
           <img
-            src="https://assets-global.website-files.com/61a0c5dbad4af846792cc63c/64f07b64d2578cea842e0a19_2.png"
-            className="h-[470px] w-[620px] "
+            src={Feat3}
+            className="md:h-[470px] md:w-[620px] h-[200px]  "
           />
         </div>
       </div>
@@ -32,4 +34,4 @@ const Feature3: React.FC = () => {
   );
 };
 
-export default Feature3;
+export default Feature1;

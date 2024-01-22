@@ -14,58 +14,59 @@ interface Styles {
 
 // Define static styles
 const styles: Styles = {
-  container: "bg-[#333333] bg-gradient-to-r from-[#0f1332] to-[#2c163b] py-20 mt-10 text-white",
-  title: "text-center text-[40px]",
-  blogContainer: "w-1/3 mx-4",
-  blogText: "text-[16px] py-4",
+  container:
+    "bg-[#333333] bg-gradient-to-r from-[#0f1332] to-[#2c163b] py-20 mt-10 text-white",
+  title: "text-center text-[40px] font-muli",
+  blogContainer: "md:w-1/3 mx-4 my-5 md:my-0",
+  blogText: "text-[16px] md:py-4 py-2 font-roboto",
   hr: "w-[95%]",
-  postTitle: "py-5 text-[25px]",
-  button: "text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm py-6 inline-flex items-center",
-  seeAllButton: "h-10 rounded-md text-white bg-white px-4 bg-gradient-to-r from-[#ffa349] to-[#f64e90]",
+  postTitle: "md:py-5 py-2 md:text-[25px] text-[22px] font-muli",
+  button:
+    "text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:py-6 py-3 inline-flex items-center font-roboto",
+  seeAllButton:
+    "h-10 rounded-md text-white bg-white px-4 bg-gradient-to-r from-[#ffa349] to-[#f64e90] font-muli",
 };
-
 const Resources: React.FC = () => {
+  // Define an array of objects with different content
+  const resourcesData = [
+    {
+      blogText: "First",
+      postTitle: "Graduate Engineer Trainee at Vodaone Intelligent Solutions ",
+      time : "Aug 2023 - Present"
+    },
+    {
+      blogText: "Second",
+      postTitle: "Web Developer & Designer at Wealo Studio",
+      time : "Dec 2022 - Feb 2023"
+    },
+    {
+      blogText: "Third",
+      postTitle: "Wordpress Developer  at CyberArtLab",
+      time : "Sep 2022 - Feb 2023"
+
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <div className="max-w-7xl mx-auto">
-        <h3 className={styles.title}>Resources</h3>
+        <h3 className={styles.title}>Professional Journey Highlights</h3>
 
-        <div className="flex my-10 ">
-          {[1, 2, 3].map((index) => (
+        <div className="md:flex md:my-10">
+          {resourcesData.map((data, index) => (
             <div key={index} className={styles.blogContainer}>
-              <p className={styles.blogText}>Blog</p>
+              <p className={styles.blogText}>{data.blogText}</p>
               <hr className={styles.hr} style={{ opacity: "40%" }} />
-              <h4 className={styles.postTitle}>
-                Closed-Loop Attribution: The Key to Unlocking Higher ROAS
-              </h4>
-              <button
-                type="button"
-                className={styles.button}
-              >
-                Read More
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
+              <h4 className={styles.postTitle}>{data.postTitle}</h4>
+              <button type="button" className={styles.button}>
+              {data.time}
+                
               </button>
             </div>
           ))}
         </div>
         <div className="flex justify-center my-10">
-          <button className={styles.seeAllButton}>
-            See All
-          </button>
+          <button className={styles.seeAllButton}>Linkedin Profile</button>
         </div>
       </div>
     </div>

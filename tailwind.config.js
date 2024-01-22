@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      fontFamily: {
+
+        'muli': ['Muli', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+
+      }
+
+    },
   },
   plugins: [],
 }

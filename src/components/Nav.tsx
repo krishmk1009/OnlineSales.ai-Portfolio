@@ -12,12 +12,12 @@ const Nav: React.FC = () => {
         </div>
 
         <div className="flex ">
-          <ul className="md:flex hidden ">
-            <li className="px-4 mx-4 pt-1">home</li>
-            <li className="px-4 mx-4 pt-1">home</li>
-            <li className="px-4 mx-4 pt-1">home</li>
-            <li className="px-4 mx-4 pt-1">home</li>
-            <button className="h-10 text-black bg-white px-4 rounded">Schedule A Demo</button>
+          <ul className="md:flex hidden  font-roboto">
+            <li className="px-4 mx-4 pt-1">Solutions</li>
+            <li className="px-4 mx-4 pt-1">Products</li>
+            <li className="px-4 mx-4 pt-1">Resources</li>
+            <li className="px-4 mx-4 pt-1">Hyperlocal</li>
+            <button className="h-10 text-black bg-white px-4 rounded">Visit Github</button>
           </ul>
        
        

@@ -11,11 +11,11 @@ interface DynamicClasses {
 const Footer: React.FC = () => {
   // Define dynamic classes using an object
   const dynamicClasses: DynamicClasses = {
-    container: "bg-[#F6F6F6] py-10",
-    logoContainer: "w-[28%]",
+    container: "bg-[#F6F6F6] md:py-10 py-5 font-roboto",
+    logoContainer: "md:w-[28%]",
     logo: "h-[77px] w-[146px]",
     icon: "h-[44px] w-[44px]",
-    column: "w-1/6 mx-2 mt-3",
+    column: "w-1/6 mx-2 mt-3 hidden md:block",
     heading: "text-[16px] font-semibold mb-3",
     listItem: "pb-1 text-[14px]",
   };
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
     <div>
       <div className={dynamicClasses.container}>
         <div className="max-w-[70rem] mx-auto">
-          <div className="flex">
+          <div className="flex justify-center md:justify-normal">
             <div className={dynamicClasses.logoContainer}>
               <img
                 src="https://assets-global.website-files.com/61a0c5dbad4af846792cc63c/635a67fba344100c9e90cc90_OnlineSales_Logo_updated_Vertical-p-500.png"
@@ -88,12 +88,12 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[70rem] mx-auto flex justify-between py-5">
+      <div className="max-w-[70rem] mx-auto md:flex md:justify-between justify-center py-5">
         <div>
-          <p>© 2022 OnlineSales.ai, All rights reserved</p>
+          <p className="text-center md:text-left font-roboto">© 2022 OnlineSales.ai, All rights reserved</p>
         </div>
 
-        <div className="flex">
+        <div className="flex justify-center md:justify-normal mt-3 md:mt-0">
           <div className="mx-2">
             <IconBxlFacebookCircle />
           </div>
