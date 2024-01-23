@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             <a href="https://drive.google.com/file/d/1GbfgzxUzoQ-GbxLZTAZxlU3zN9SjiafR/view?usp=sharing" target="blank">
 
             <button className="h-10 text-white  px-2 md:px-4 rounded bg-gradient-to-r from-[#ffa349] to-[#f64e90] hover:bg-white font-muli ">
-             Download CV
+           Resume
             </button>
             </a>
           </div>
